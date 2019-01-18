@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function hh() {
+            //this.hh   已经成为一个属性   而且构造函数中的属性只能用this. 的方法来构建
+            this.hh = function () {
+                console.log(1111);
+                console.log(8888);
+
+
+            }
+            console.log(666); // 普通的函数
+
+        }
+
+        var vm = new hh() //此时会自动调用构造函数的普通方法,但是不会用属性方法
+        vm.hh() //必须是实例化对象调用属性方法
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<style>
+    .one,
+    .two {
+        width: 100px;
+        height: 200px;
+    }
+
+    .one {
+        background-color: aqua;
+        position: absolute;
+        display: flex
+            /* float: left; */
+    }
+
+    .son {
+        width: 20px;
+        height: 20px;
+        background-color: brown;
+    }
+
+    .two {
+        background-color: black;
+
+    }
+</style>
+
+<body>
+    <!--想要变成一排,必须两个同时浮动,如果有一个没有那么div独占一行的特性仍会显现出来-->
+    <div class="one">
+        <div class="son">
+
+        </div>
+    </div>
+    <div class="two"></div>
+
+</body>
+
+</html>

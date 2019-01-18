@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .top {
+
+            width: 900px;
+            height: 80px;
+            background-color: pink;
+            border: 1px dashed deeppink;
+            margin: 5px auto;
+
+        }
+
+        .banner {
+
+            width: 900px;
+            height: 60px;
+            background-color: skyblue;
+            border: 1px dashed blue;
+            margin: 0 auto 5px;
+
+        }
+
+        .main {
+
+            width: 900px;
+            height: 500px;
+            background-color: lightcoral;
+            border: 1px dashed red;
+            margin: 0 auto 5px;
+
+        }
+
+        .footer {
+
+            width: 900px;
+            height: 100px;
+            background-color: lightgreen;
+            border: 1px dashed green;
+            margin: 0 auto 5px;
+
+        }
+
+        .left {
+
+            /*高度是无法继承的，所以要自己设置高度要和父盒子统一*/
+            width: 290px;
+            height: 500px;
+            background-color: lightgray;
+            float: left;
+
+        }
+
+        .right {
+
+            /*高度是无法继承的，所以要自己设置高度要和父盒子统一*/
+            width: 600px;
+            height: 500px;
+            background-color: lightyellow;
+            float: right;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <!--main是版心处理  所以两个侧边栏才不会跑出来-->
+    <div class="main">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+    <div class="footer">footer</div>
+    <script>
+        console.log(1111);
+        console.log(88888888888888);
+    </script>
+
+</body>
+
+</html>

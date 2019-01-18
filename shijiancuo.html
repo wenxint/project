@@ -1,0 +1,13 @@
+<script>
+    function shijian(a) {
+        var date = a
+        var year = date.getFullYear()
+        var mounth = date.getMonth() + 1
+        mounth < 10 ? "0" + mounth : mounth
+        console.log(year + "-" + mounth);
+
+
+    }
+    var a = new Date()
+    shijian(a)
+</script>

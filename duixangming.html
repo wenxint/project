@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function timestampToTime(timestamp) {
+      var date = new Date(timestamp); //时间戳为10位需*1000，时间戳为13位的话不需乘1000
+      Y = date.getFullYear() + '-';
+      M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+      D = (date.getDate() < 10 ? "0" + date.getDate() : date.getDate()) + ' ';
+      h = (date.getHours() < 10 ? "0" + date.getHours() : date.getHours()) + ':';
+      m = (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()) + ':';
+      s = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+      console.log(Y + M + D + h + m + s);
+    }
+    var d = new Date(2018, 5, 8, 12, 8, 9)
+    console.log(d);
+
+    timestampToTime(d)
+  </script>
+</body>
+
+</html>
